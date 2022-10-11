@@ -38,6 +38,10 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        /*
+        ada 2 cara memanggil action: cara yg pertama ini simple, Namun kode ini hanya bisa digunakan ketika diklik,
+        jika ingin memanggil navigasi pada aksi yg lainnya, bisa menggunakan cara ke 2
+         */
         binding.btnCategory.setOnClickListener(
             Navigation.createNavigateOnClickListener(R.id.action_homeFragment_to_categoryFragment)
         )
